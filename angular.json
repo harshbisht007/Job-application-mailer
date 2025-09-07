@@ -25,7 +25,9 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "primeicons/primeicons.css",
+              "primeflex/primeflex.css"
             ]
           },
           "configurations": {
@@ -54,6 +56,9 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "buildTarget": "angular-resume-mailer:build:production"
